@@ -1,0 +1,734 @@
+body {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Roboto Condensed', sans-serif;
+	max-width: 1800px;
+}
+
+a {
+	color: #00aeef;
+	text-decoration: none;
+}
+
+/* navbar */
+
+nav {
+	max-width: 1802px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	font-size: 18px;
+	display: inline-block;
+	background-color: #fff;
+	opacity: 0.95;
+	z-index: 9999;
+}
+
+nav ul {
+	margin-right: 12%;
+}
+
+nav li {
+	display: inline-block;
+	float: right;
+	margin: 10px 0px 0px 50px;
+	font-size: 18px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #58595b;
+	text-transform: uppercase;
+}
+
+.home a.cyan {
+	/*font-weight: bold;*/
+	border-bottom: 2px solid;
+	padding-bottom: 12px;
+}
+
+.about a.magenta {
+	/*font-weight: bold;*/
+	border-bottom: 2px solid;
+	padding-bottom: 12px;
+}
+
+.cyan:hover {
+	color: #00aeef;
+}
+
+.magenta:hover {
+	color: #ec008c;
+}
+
+.logo {
+	position: absolute;
+	left: 12%;
+	top: 15px;
+	width: 70px;
+}
+
+/* page layout */
+
+.gallery {
+	width: 100%;
+	margin-left: 0;
+}
+
+.intro {
+	text-align: right;
+	float: right;
+	width: 50%;
+	margin-top: 120px;
+	margin-bottom: 80px;
+	margin-right: 10%;
+}
+
+/* Text Styles */
+
+.intro h1 {
+	font-family: 'Slabo 27px', serif;
+	font-size: 55px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.intro h2 {
+	margin-bottom: 60px;
+}
+
+.intro p {
+	font-size: 20px;
+	line-height: 30px;
+	margin: 15px 0 0 0;
+}
+
+/* Home Floats Styling Layout */
+
+div.floats {
+	clear: right;
+}
+
+.floatsPic {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	height: 500px;
+}
+
+.pic {
+	min-width: 100%;
+}
+
+.galleryPic {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	height: 500px;
+}
+
+.galleryPic img {
+	min-width: 100%;
+}
+
+.massive {
+	width: 96%;
+	height: 700px;
+	margin-bottom: 30px;
+	margin-left: 2%;
+}
+
+.huge {
+	width: 47%;
+	height: 700px;
+	margin-bottom: 30px;
+	margin-left: 2%;
+}
+
+.big {
+	width: 60%;
+	height: 500px;
+	margin-bottom: 30px;
+	margin-left: 2%;
+}
+
+.medium {
+	width: 47%;
+	height: 335px;
+	margin-bottom: 30px;
+	margin-left: 2%;
+}
+
+.small {
+	width: 25%;
+	height: 350px;
+	margin-bottom: 30px;
+	margin-left: 2%;
+}
+
+.sizeQuote {
+	width: 34%;
+	height: 500px;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 30px;
+	margin-left: 2%;
+}
+
+.cheersPic {
+	width: 100%;
+	min-height: auto;
+}
+
+.higher {
+	height: auto;
+}
+
+/* Home Floats Hover */
+
+.floatsPic .floatsText {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	background: rgba(256,256,256,0.7);
+}
+
+.floatsPic:hover .floatsText {
+	opacity: 1;
+	transition: 0.8s ease;
+}
+
+.floatsPic:hover .pic {
+	transition: 0.8s ease;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+img.vector {
+	width: 60px;
+	margin: 60px 60px 15px;
+	float: right;
+}
+
+.floatsText h2 {
+	clear: right;
+	color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-right: 60px;
+	text-align: right;
+}
+
+.floatsText h3 {
+	clear: right;
+	color: #000;
+	font-family: 'Slabo 27px', serif;
+	font-size: 25px;
+	font-weight: lighter;
+	margin-right: 60px;
+	margin-top: -30px;
+	text-align: right;
+}
+
+
+/* Project Pages layout */
+
+.backColorCyan {
+	background-color: #00aeef;
+}
+
+.backColorMagenta {
+	background-color: #ec008c;
+}
+
+.backColorYellow {
+	background-color: #fff200;
+}
+
+div.backColorYellow .quote,
+div.backColorYellow .titleQuote {
+	color: #000;
+}
+
+/* Project's Quotes */
+
+p.quote {
+	font-size: 40px;
+	font-family: 'Slabo 27px', serif;
+	color: white;
+	padding: 30px 40px 0 60px;
+}
+
+p.titleQuote {
+	padding-right: 60px; 
+	color: white;
+	font-size: 20px;
+	text-align: right;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* About page */
+
+div.aboutColumnDiv {
+	clear: right;
+	margin-left: 10%;
+}
+
+.aboutColumnLeft {
+	float: left;
+	width: 40%;
+	margin: 0 3% 60px;
+}
+
+.aboutColumnRight {
+	float: left;
+	width: 40%;
+	margin: 0 0 60px 3%;
+}
+
+.aboutColumnDiv p {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0;
+	text-align: left;
+}
+
+h1.cheers {
+	font-family: 'Slabo 27px', serif;
+	font-size: 55px;
+	text-transform: uppercase;
+	margin: 0 10% 40px 0;
+	float: right;
+}
+
+/* Footer */
+
+footer {
+	margin: 0 auto;
+	float: left;
+	clear: left;
+	height: 110px;
+	color: #58595b;
+	width: 100%;
+}
+
+footer div {
+	font-family: 'Slabo 27px', serif;
+	font-size: 12px;
+	display: inline-block;
+	width: 40%;
+	float: left;
+}
+
+.contact {
+	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.contact a {
+	color: #000;
+}
+
+.contact a:hover {
+	color: #00aeef;
+}
+
+.div-footer {
+	margin-left: 10%;
+	clear: left;
+}
+
+.icon {
+	padding: 7px 0 0 15px;
+	width: 18px;
+	float: right;
+	display: inline-block;
+}
+
+.icon:hover {
+	opacity: 0.3;
+	transition: 0.8s ease;
+}
+
+/*iPad size*/
+
+@media all and (max-width: 1024px) {
+
+	.gallery {
+		width: 100%;
+		margin: 0;
+	}
+
+	.floats {
+		margin: 0;
+	}
+
+	.intro {
+		text-align: right;
+		width: 60%;
+		margin: 100px 10% 40px 10%;
+	}
+
+	.intro h1 {
+		font-family: 'Slabo 27px', serif;
+		font-size: 45px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	.intro h2 {
+		margin-bottom: 40px;
+	}
+
+	.intro p {
+		font-size: 20px;
+		line-height: 30px;
+		margin: 0;
+	}
+
+	.floatsPic {
+		width: 100%;
+		clear: left;
+		max-height: 600px;
+		margin: 0 0 0 0;
+	}
+
+	.floatsPic img.pic {
+		min-width: 100%;
+		overflow: hidden;
+	}
+
+	div.galleryPic {
+		margin-left: 0;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.galleryPic img {
+		width: 100%;
+	}
+
+	.massive .huge .big .medium {
+		width: 100%;
+	}
+
+	.sizeQuote {
+		width: 100%;
+		height: 200px;
+		float: left;
+		margin-left: 0;
+	}
+
+	/* Project's Quotes */
+
+	p.quote {
+		text-align: left;
+		font-size: 30px;
+		font-family: 'Slabo 27px', serif;
+		color: white;
+		padding: 10px 40px 0 40px;
+	}
+
+	p.titleQuote {
+		color: white;
+		font-size: 15px;
+		text-align: left;
+		padding-left: 40px;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+
+	/* Home floats hover */
+
+	.floatsPic .floatsText {
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+		background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.7)); 
+	}
+
+	img.vector {
+		width: 60px;
+		margin: 60px 60px 15px;
+		float: right;
+	}
+
+	.floatsText h2 {
+		clear: right;
+		color: #000;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 40px;
+		text-transform: uppercase;
+		margin-right: 60px;
+		text-align: right;
+	}
+
+	.floatsText h3 {
+		margin-right: 60px;
+	}
+
+	/* About page */
+
+	div.aboutColumnDiv {
+		clear: right;
+		margin-left: 10%;
+	}
+
+	.aboutColumnLeft {
+		float: left;
+		width: 90%;
+		margin: 0 5% 10px 0;
+	}
+
+	.aboutColumnRight {
+		clear: left;
+		width: 90%;
+		margin: 0 5% 60px 0;
+	}
+
+	.aboutColumnDiv p {
+		font-size: 18px;
+		line-height: 30px;
+		margin: 0;
+		text-align: justify;
+	}
+
+	h1.cheers {
+		font-family: 'Slabo 27px', serif;
+		font-size: 55px;
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		float: right;
+	}
+
+	img.cheersPic {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	/* Footer */
+
+	footer {
+		margin: 0 auto;
+		float: none;
+		clear: none;
+		height: 70px;
+		color: #58595b;
+		width: 100%;
+	}
+
+	footer div {
+		font-family: 'Slabo 27px', serif;
+		font-size: 12px;
+		display: inline-block;
+		width: 100%;
+		float: none;
+		padding-top: 5px;
+		text-align: center;
+	}
+
+	.div-footer {
+		margin-left: 0;
+	}
+
+	div.social {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.icon {
+		padding: 7px 0 30px 15px;
+		width: 18px;
+		margin: 0 auto;
+		align-items: center;
+		display: inline-block;
+	}
+
+	.icon:hover {
+		opacity: 0.3;
+	}
+}	
+
+/* iPhone */
+
+@media all and (max-width: 480px) {
+
+	.gallery {
+		width: 100%;
+		margin: 0;
+	}
+
+	.intro {
+		text-align: left;
+		width: 80%;
+		margin: 100px 10% 40px 10%;
+	}
+
+	.intro h1 {
+		font-family: 'Slabo 27px', serif;
+		font-size: 45px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	.intro h2 {
+		margin-bottom: 40px;
+	}
+
+	.intro p {
+		font-size: 18px;
+		line-height: 25px;
+		margin: 0;
+	}
+
+	.floatsText h3 {
+		clear: right;
+		color: #000;
+		font-family: 'Slabo 27px', serif;
+		font-size: 25px;
+		font-weight: lighter;
+		margin-top: 0px;
+		text-align: right;
+	}
+
+	.floatsPic {
+		width: 100%;
+		clear: left;
+		height: auto;
+		max-height: 300px;
+		margin-left: 0;
+	}
+
+	.floatsPic img.pic {
+		width: 125%;
+	}
+
+	.floatsPic .floatsText {
+		background: rgba(255,255,255,0.75);
+	}
+
+	img.vector {
+		width: 60px;
+		margin: 30px 30px 10px 0;
+	}
+
+	.floatsText h2 {
+		font-size: 40px;
+		margin: 20px 30px 0 0;
+	}
+
+	.floatsText h3 {
+		visibility: hidden;
+	}
+
+	div.galleryPic {
+		width: 100%;
+		margin: 0 0 30px 0;
+		padding: 0;
+		overflow: hidden;
+		height: auto;
+	}
+
+	.galleryPic img {
+		max-width: 100%;
+	}
+
+	.massive .huge .big .medium {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.sizeQuote {
+		width: 100%;
+		height: 200px;
+		margin: 0 0 40px;
+		float: left;
+	}
+
+	/* Project's Quotes */
+
+	p.quote {
+		text-align: left;
+		font-size: 24px;
+		font-family: 'Slabo 27px', serif;
+		color: white;
+		padding: 10px 30px 0 30px;
+	}
+
+	p.titleQuote {
+		color: white;
+		font-size: 16px;
+		padding-left: 30px;
+		text-align: left;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+
+	/* footer */
+
+	footer {
+		margin: 0 auto;
+		float: none;
+		clear: none;
+		height: 70px;
+		color: #58595b;
+		width: 100%;
+	}
+
+	footer div {
+		font-family: 'Slabo 27px', serif;
+		font-size: 12px;
+		display: inline-block;
+		width: 100%;
+		float: none;
+		padding-top: 5px;
+		text-align: center;
+	}
+
+	.div-footer {
+		margin-left: 0;
+	}
+
+	div.social {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.icon {
+		padding: 7px 0 30px 15px;
+		width: 18px;
+		margin: 0 auto;
+		align-items: center;
+		display: inline-block;
+	}
+
+	.icon:hover {
+		opacity: 0.3;
+	}
+
+}
